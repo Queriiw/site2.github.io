@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>Kartal Yuvası</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="img/bjklogo.png">
+      </head>
+<body>
+    <!---Navbar---->
+    <nav class="navbar">
+        <h1 class="logo"><img src="img/kartal.png" alt=""></h1>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
+            <li><a href="maclar.html">Maçlar</a></li>
+            <li><a href="index.html#footer">Sosyal Medya</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>      
+        </ul>
+        <img src="img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    
+    <header>
+        <div class="header-content">
+            <h2>Kartal Yuvası</h2>
+            <div class="line"></div>
+            <h1>Kartallar Yüksek Uçar.</h1>
+        </div>
+    </header>
+
+    <!---== Events == --->
+    <section class="events">
+        <div class="title">
+            <h1>Formalar</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="img/erkek.png" alt="">
+                <h4>Erkek</h4>
+                <p>Beşiktaş formasıyla gücü ve rahatlığı bir arada yaşa!</p>
+                <a href="erkekforma.html" class="ctn">Göz At</a>
+            </div>
+            <div class="col">
+                <img src="img/kadın.png" alt="">
+                <h4>Kadın</h4>
+                <p>Kadınlar için şıklık, rahatlık ve Beşiktaş! Her an güçlü ve özgür ol.</p>
+                <a href="kadinforma.html" class="ctn">Göz At</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="explore-content">
+            <div class="left">
+                <h1 class="text-white">Siyah, geçmişin izlerini taşıyan bir simgedir!</h1>
+                <p>Beşiktaş ruhu, karanlıkta bile parlayan bir ışık! Siyah, mücadele gücümüzü ve asla pes etmeyen ruhumuzu simgeler. Zorluklar ne olursa olsun, karanlıkta bile parlamaya devam ederiz.
+                </p>
+            </div>
+            <div class="right">
+                <h1 class="text-black">Beyaz, saf ve temiz bir gücün simgesidir!</h1>
+                <p style="color: black;">Beyaz, gücümüzün ve sevdamızın rengidir. Beyaz, adaletin, barışın ve saf mücadelenin sembolüdür. Biz Beşiktaşlılar, her zaman doğru yolda, temiz bir kalple ilerleriz.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>TOZLU RAFLARDA KARA KARTAL</h1>
+                <div class="line"></div>
+                <p>Zamanın sararmış fotoğraflarında bile yüzümüzde aynı gurur, gözlerimizde aynı ateş var! İşte Beşiktaş'ın asla unutulmayacak anları...</p>
+                <a href="raflar.html" class="ctn">Devamını Oku</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="img/ilksamp.jpg" alt="">
+                    <img src="img/metinalifeyyaz.jpg" alt="">
+                    <img src="img/logolar.jpg" alt="">
+                    <img src="img/seba.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="icons">
+            <a href="https://twitter.com/besiktas" target="_blank" class="icon">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1YykE0iSNjg8uYRhknVnvNPXgP-eNrfyZA&s" alt="Twitter" class="icon-white">
+            </a>
+            <a href="https://instagram.com/besiktas" target="_blank" class="icon">
+                <img src="https://sosyalmedya.co/wp-content/uploads/2016/05/glyph-logo_May2016.png" alt="Instagram" class="icon-white">
+            </a>
+            <a href="https://youtube.com/besiktas" target="_blank" class="icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" alt="YouTube" class="icon-white">
+            </a>
+        </div>
+        <p class="copyright">© 2024 Beşiktaş Jimnastik Kulübü. Tüm hakları saklıdır.</p>
+        <p class="copyright">Sıdkı YILDIRIM</p>
+    </footer>
+
+    <div id="footer">
+        <p></p>
+    </div>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
